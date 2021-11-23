@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "ProximaBold";
+    src: url('../fonts/proximanova/bold/proximanova-bold.ttf') format('truetype'), url('../fonts/proximanova/bold/proximanova-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "ProximaRegular";
+    src: url('../fonts/proximanova/regular/proximanova-regular.ttf') format('truetype'), url('../fonts/proximanova/regular/proximanova-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "ProximaLight";
+    src: url('../fonts/proximanova/light/proximanova-light.ttf') format('truetype'), url('../fonts/proximanova/light/proximanova-light.otf') format('opentype');
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font: 18px "ProximaRegular", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1340px;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    font: 48px "ProximaBold", sans-serif;
+}
+
+
+.main-btn {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 50px;
+    color: #fff;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: url("../img/button-bg.jpg") repeat-y;
+}
+
+.welcome-section {
+    position: relative;
+    height: 100vh;
+    background: url("../img/welcome-bg.jpg") 50% 0 no-repeat;
+    background-size: cover;
+}
+
+
+.welcome-section header {
+    overflow: hidden;
+    padding-top: 55px;
+}
+
+.welcome-section .logo {
+    float: left;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    float: left;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #000;
+    border: 1px solid transparent;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.main-nav a:hover {
+    border-color: #565656;
+}
+
+.welcome-slogan {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.welcome-slogan h1 {
+    margin-bottom: 5px;
+    font: 48px "ProximaBold", sans-serif;
+}
+
+.welcome-slogan p {
+    margin-bottom: 60px;
+    color: #949494;
+}
+
+.welcome-section .scroll-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    padding-top: 55px;
+    font-size: 14px;
+    color: #fff;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url("../img/icon-mouse.png") 50% 0 no-repeat;
+}
+
+.our-advantage {
+    overflow: hidden;
+    padding: 140px 0 40px;
+    color: #fff;
+    background: url("../img/advantage-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.advantage-list li,
+.what-we-do-list li {
+    display: inline-block;
+    margin-left: 155px;
+    margin-bottom: 100px;
+    width: 570px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.advantage-list li:nth-child(2n+1),
+.what-we-do-list li:nth-child(2n+1) {
+    margin-left: 0;
+}
+
+.advantage-list h2 {
+    margin-bottom: 25px;
+}
+
+.advantage-list h2 span {
+    font-family: "ProximaLight", sans-serif;
+}
+
+.advantage-list p {
+    margin-bottom: 35px;
+    font-family: "ProximaLight", sans-serif;
+    line-height: 30px;
+}
+
+.what-we-do {
+    padding-top: 100px;
+}
+
+.what-we-do h2 {
+    margin-bottom: 100px;
+}
+
+.what-we-do-list li {
+    margin-bottom: 75px;
+    padding-left: 160px;
+}
+
+.what-we-do-list h3 {
+    margin-bottom: 25px;
+    font: 30px "ProximaBold", sans-serif;
+}
+
+
+.what-we-do-list p {
+    margin-bottom: 25px;
+    font: 18px/30px "ProximaLight", sans-serif;
+    color: #949494;
+}
+
+.what-we-do-list .web-design {
+    background: url("../img/web-design.png") 0 10px no-repeat;
+}
+
+.what-we-do-list .web-application {
+    background: url("../img/web-application.png") 0 10px no-repeat;
+}
+
+.what-we-do-list .digital-painting {
+    background: url("../img/digital-painting.png") 0 10px no-repeat;
+}
+
+.what-we-do-list .desktop-applications {
+    background: url("../img/digital-painting.png") 0 10px no-repeat;
+}
+
+.slider {
+    margin-top: 100px;
+}
+
+.slider ul {
+    overflow: hidden;
+}
+
+.slider li {
+    position: relative;
+    float: left;
+    width: calc(100vw/3);
+}
+
+.slider li:hover .hover-block {
+    display: block;
+}
+
+.slider li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slider .hover-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, .63);
+    color: #fff;
+}
+
+.slider .hover-wrap {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .table-cell-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slider h4 {
+    margin-bottom: 20px;
+    font: 30px "ProximaBold", sans-serif;
+}
+
+.slider p {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-us {
+    padding: 105px 0;
+    color: #fff;
+    background-size: cover;
+    background: url("../img/about-bg.jpg") 50% 50% no-repeat;
+}
+
+.about-us h2 {
+    margin-bottom: 30px;
+}
+
+.about-us header {
+    margin-bottom: 115px;
+}
+
+.about-us header p {
+    margin: 0 auto;
+    max-width: 710px;
+    color: #949494;
+    line-height: 30px;
+}
+
+.about-us-list {
+    margin: 0 auto 80px;
+    max-width: 1250px;
+}
+
+.about-us-list li {
+    display: inline-block;
+    margin-left: 55px;
+    margin-bottom: 25px;
+    max-width: 250px;
+    vertical-align: top;
+}
+
+.about-us-list h3 {
+    margin: 25px 0;
+    font: 24px 'Roboto', sans-serif;
+}
+
+.about-us-list p {
+    line-height: 30px;
+    color: #949494;
+}
+
+.about-us-list li:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.map iframe {
+    width: 100%;
+    min-height: 600px;
+}
+
+.text-bottom {
+    padding: 75px 0 150px;
+    font: 1em "ProximaLight", sans-serif;
+    color: rgb(148,148,148);
+}
